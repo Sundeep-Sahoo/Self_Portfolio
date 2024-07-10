@@ -56,7 +56,7 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <span className="tagline">Welcome To My Portfolio</span>
+                <span className="tagline">Welcome To My Portfolio!!</span>
                 <h1>{`Hi! I'm Sundeep,`} <span className="txt-rotate" dataPeriod="2000" data-rotate='[ "Web Developer", "Python Developer", "Flutter App Designer" ]'><span className="wrap">{text}</span></span></h1>
                   <p>Hello! I’m Om Sundeep Sahoo, a B.Tech student in Computer Science & Engineering at GIET University, Odisha. With expertise in Java, C, and Python, I enjoy solving real-world problems through innovative projects like Facial Emotion Recognition and Online Hotel Search. I thrive in collaborative settings and hold leadership roles in various student organizations. Passionate about continuous learning and technology's potential to make a positive impact, I’m always eager to take on new challenges.</p>
                   <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>

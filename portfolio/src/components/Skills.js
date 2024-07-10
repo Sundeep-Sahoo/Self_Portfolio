@@ -1,8 +1,11 @@
-import meter1 from "../assets/img/Flutter.png";
+import meter1 from "../assets/img/F.png";
 import meter2 from "../assets/img/C.png";
 import meter3 from "../assets/img/java.png";
 import meter4 from "../assets/img/java-script.png";
 import meter5 from "../assets/img/mysql.png";
+import meter6 from "../assets/img/css-3.png";
+import meter7 from "../assets/img/html-5.png";
+import meter8 from "../assets/img/python.png";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import arrow1 from "../assets/img/left-arrow.png";
@@ -52,27 +55,39 @@ const CustomRightArrow = ({ onClick }) => {
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
                         <h2>Skills</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
+                        <p>My Journey from Intermediate Skills to Mastery in Coding, Design, and Innovation. Diligently working to bridge the gap between proficiency and expertise, transforming passions into polished brilliance, and blending creativity with technical prowess for lasting impact</p>
                         <Carousel responsive={responsive} autoPlay={true}  autoPlaySpeed={1500} infinite={true} customLeftArrow={<CustomLeftArrow />} customRightArrow={<CustomRightArrow />} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Web Development</h5>
+                            <a href="https://flutter.dev/"><img src={meter1} alt="Image" /></a>
+                                <h5>Flutter</h5>
                             </div>
                             <div className="item">
-                                <img src={meter2} alt="Image" />
-                                <h5>Brand Identity</h5>
+                            <a href="https://www.cprogramming.com/"><img src={meter2} alt="Image" /></a>
+                                <h5>C Programming </h5>
                             </div>
                             <div className="item">
-                                <img src={meter3} alt="Image" />
-                                <h5>Logo Design</h5>
+                            <a href="https://www.java.com/en/"><img src={meter3} alt="Image" /></a>
+                                <h5>Java</h5>
                             </div>
                             <div className="item">
-                                <img src={meter4} alt="Image" />
-                                <h5>Web Development</h5>
+                            <a href="https://www.javascript.com/"><img src={meter4} alt="Image" /></a>
+                                <h5>Java-Script</h5>
                             </div>
                             <div className="item">
-                                <img src={meter5} alt="Image" />
-                                <h5>Web Development</h5>
+                            <a href="https://www.mysql.com/"><img src={meter5} alt="Image" /></a>
+                                <h5>MySql</h5>
+                            </div>
+                            <div className="item">
+                            <a href="https://www.w3.org/Style/CSS/Overview.en.html"><img src={meter6} alt="Image" /></a>
+                                <h5>Css</h5>
+                            </div>
+                            <div className="item">
+                            <a href="https://html.com/"><img src={meter7} alt="Image" /></a>
+                                <h5>Html</h5>
+                            </div>
+                            <div className="item">
+                            <a href="https://www.python.org/"><img src={meter8} alt="Image" /></a>
+                                <h5>Python</h5>
                             </div>
                         </Carousel>
                     </div>
