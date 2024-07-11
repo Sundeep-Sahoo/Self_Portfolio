@@ -25,7 +25,7 @@ export const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setButtonText("Sending...");
-    let response = await fetch("https://self-portfolio-1.onrender.com", {
+    let response = await fetch("https://s-coder.onrender.com/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json;charset=utf-8",
@@ -36,7 +36,7 @@ export const Contact = () => {
     let result = await response.json();
     setFormDetails(formInitialDetails);
     if (result.code == 200) {
-      setStatus({ succes: true, message: 'Message sent successfully'});
+      setStatus({ succes: true, message:<h3>Message  sent  successfully !!</h3> });
     } else {
       setStatus({ succes: false, message: 'Something went wrong, please try again later.'});
     }
@@ -73,12 +73,16 @@ export const Contact = () => {
                       <textarea rows="6" value={formDetails.message} placeholder="Message" onChange={(e) => onFormUpdate('message', e.target.value)}></textarea>
                       <button type="submit"><span>{buttonText}</span></button>
                     </Col>
-                    {
+                    <div><p></p></div>
+                    <div>{
                       status.message &&
                       <Col>
-                        <p className={status.success === false ? "danger" : "success"}>{status.message}</p>
+                      <div class="alert  p-3 mb-2 bg-ransparent text-body" role="alert">
+                      <p className={status.success === false ? "danger" : "success"}>{status.message}</p>
+                      </div>
                       </Col>
-                    }
+                    }</div>
+                    
                   </Row>
                 </form>
               </div>}
