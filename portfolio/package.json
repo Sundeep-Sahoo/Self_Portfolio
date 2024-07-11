@@ -29,8 +29,11 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "start-server": "node server.js && npm start",
-    "eject": "react-scripts eject"
+    "dev:api": "node server.js",
+    "dev:client": "npm start",
+    "dev": " npm run dev:client && npm run dev:api",
+    "eject": "react-scripts eject",
+    "main": "nodemon server.js"
   },
   "eslintConfig": {
     "extends": [
@@ -44,7 +47,6 @@
       "not dead",
       "not op_mini all"
     ],
-
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
